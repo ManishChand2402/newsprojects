@@ -6,6 +6,8 @@ import {
   Heading,
   ImageS,
   Faqs,
+  StayPlace,
+  ActivitiesToDo,
 } from "./Button/ButttonC";
 import {
   FaAngleLeft,
@@ -13,12 +15,13 @@ import {
   FaInfoCircle,
   FaStar,
 } from "react-icons/fa";
-import { MdOutlineFoodBank, MdOutlineWorkspacePremium } from "react-icons/md";
+import { MdOutlineFoodBank, MdOutlineStar, MdOutlineWorkspacePremium } from "react-icons/md";
 import { TbHeartCheck } from "react-icons/tb";
 import { BsPeople } from "react-icons/bs";
 import { GiCommercialAirplane, GiSandsOfTime } from "react-icons/gi";
 import { LuTrain } from "react-icons/lu";
 import { PiTicketThin, PiVanLight } from "react-icons/pi";
+import { IoMdStarOutline } from "react-icons/io";
 
 function IndividualTripPage() {
   return (
@@ -122,7 +125,7 @@ function IndividualTripPage() {
           </div>
           <div className="">
             <Heading titel={"What you'll see"} />
-            <div className="flex gap-x-2 overflow-auto mt-1">
+            <div className="flex  gap-x-2 overflow-x-auto mt-1">
               <ImageS
                 img={"./pexels-oliver2.svg"}
                 titel={"Lorem ipsum dolor sit amet consectetur."}
@@ -131,6 +134,12 @@ function IndividualTripPage() {
                 img={"./pexels-oliver2.svg"}
                 titel={"Lorem ipsum dolor sit amet consectetur."}
               />
+              <ImageS
+                img={"./pexels-oliver2.svg"}
+                titel={"Lorem ipsum dolor sit amet consectetur."}
+              />
+             
+              
             </div>
           </div>
           <div>
@@ -141,6 +150,24 @@ function IndividualTripPage() {
             <Faqs titel={"Lorem ipsum dolor sit"} Days={"Day 4"} />
             <Faqs titel={"Lorem ipsum dolor sit"} Days={"Day 5"} />
             <Faqs titel={"Lorem ipsum dolor sit"} Days={"Day 6"} />
+          </div>
+          <div className="my-3 pb-2">
+          <Heading titel={"Where you'll stay"} />
+          <div className="flex gap-x-2 overflow-auto mt-2 pb-2">
+            <StayPlace titel="Lorem ipsum dolor sit amet consectetur." img={"./pexels-oliver.svg"} icon={<MdOutlineStar />} />
+            <StayPlace titel="Lorem ipsum dolor sit amet consectetur." img={"./pexels-oliver.svg"} icon={<MdOutlineStar />}/>
+            <StayPlace titel="Lorem ipsum dolor sit amet consectetur." img={"./pexels-oliver.svg"} icon={<MdOutlineStar />}/>
+          </div>
+          <div>
+          </div>
+          </div>
+          <div className="my-3 pb-2">
+          <Heading titel={"Activities to-do"} />
+          <div className="flex gap-x-2 overflow-auto mt-2 pb-2">
+            <ActivitiesToDo titel="Half day sunrise tour on top station" img={"pexels-oliver.svg"} price={"1,388.65"} oldPrice={"1,600.65"} name="Wildlife Watching" />
+            <ActivitiesToDo titel="Half day sunrise tour on top station" img={"pexels-oliver.svg"} price={"1,388.65"} oldPrice={"1,600.65"}  name="Wildlife Watching"/>
+            <ActivitiesToDo titel="Half day sunrise tour on top station" img={"pexels-oliver.svg"} price={"1,388.65"} oldPrice={"1,600.65"}  name="Wildlife Watching"/>
+          </div>
           </div>
         </div>
       </div>

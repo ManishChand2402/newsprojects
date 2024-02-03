@@ -40,9 +40,9 @@ export const Heading = ({ titel }) => {
 };
 export const ImageS = ({ titel, img }) => {
   return (
-    <div className=" ">
-      <img src={img} alt="" className="" width={300} height={200} />
-      <p className="text-[0.6rem] py-[0.7rem] ">{titel}</p>
+    <div className="">
+      <img src={img} alt="" className="min-w-[11.6rem]  " />
+      <p className="text-[0.6rem] py-[0.7rem] pr-[2rem] ">{titel}</p>
     </div>
   );
 };
@@ -56,6 +56,41 @@ export const Faqs = ({ titel, Days }) => {
       <button className="text-[1.2rem] mr-[1rem]">
         <FaPlus />
       </button>
+    </div>
+  );
+};
+
+export const StayPlace = ({ titel, img, icon }) => {
+  return (
+    <div className="shadow-lg px-[0.3rem] rounded-xl">
+      <img src={img} alt="" className="min-w-[11.6rem] rounded-2xl " />
+      <p className="text-[0.7rem] font-medium  py-[0.7rem] ml-1  ">
+        {titel}
+      </p>
+      <div className="mb-4">
+        <span className="text-yellow-400 flex gap-x-2 text-[0.8rem]">
+          {icon} {icon} {icon} {icon} 
+        </span>
+      </div>
+    </div>
+  );
+};
+export const ActivitiesToDo = ({ titel, img, price, oldPrice, name }) => {
+  return (
+    <div className="shadow-lg px-[0.4rem] rounded-xl">
+      <img src={img} alt="" className="min-w-[11.3rem] rounded-2xl " />
+      <p className="text-[0.8rem] font-semibold text-black py-[0.3rem]  ">
+        {titel}
+      </p>
+      
+      <p className="text-[0.7rem] text-gray-500">{name}</p>
+      <div className="mb-3 mt-2">
+        <p className="text-[.93rem] text-gray-500 ">from
+          <span className="text-[1rem] text-red-500 font-semibold"> {price} </span>
+          <span className="line-through text-[0.8rem] text-gray-500">{oldPrice}</span> {""}
+          (per adult)
+        </p>
+      </div>
     </div>
   );
 };
