@@ -60,7 +60,7 @@ export const FaqCp = () => {
             />
           </svg>
         </summary>
-        <div className=" pt-4  bg-gray-50 rounded-t-lg mt-[0.1rem]">
+        <div className=" py-4  bg-gray-50 rounded-t-lg mt-[0.1rem]">
           <h1 className="font-semibold pl-5 text-[0.9rem]">Included</h1>
 
           <div className="flex mt-1 items-center">
@@ -153,7 +153,7 @@ export const FaqCp = () => {
             />
           </svg>
         </summary>
-        <div className=" pt-4  bg-gray-50 rounded-lg mt-[0.1rem]">
+        <div className=" py-4  bg-gray-50 rounded-lg mt-[0.1rem]">
           <h1 className="font-semibold pl-5 text-[0.9rem]">
             Which attractions will i visit with half sunrise tour on top
             station, Munnar (By Munnar info)?{" "}
@@ -261,7 +261,7 @@ export const FaqCp = () => {
             />
           </svg>
         </summary>
-        <div className=" pt-4  bg-gray-50 rounded-lg mt-[0.1rem]">
+        <div className=" py-4 pt-4  bg-gray-50 rounded-lg mt-[0.1rem]">
           {/* <h1 className="font-semibold pl-5 text-[0.9rem]">  </h1> */}
 
           <div className="flex mt-1 items-start">
@@ -294,7 +294,7 @@ export const FaqCp = () => {
             />
           </svg>
         </summary>
-        <div className=" pt-4  bg-gray-50 rounded-lg mt-[0.1rem]">
+        <div className=" py-4  bg-gray-50 rounded-lg mt-[0.1rem]">
           {/* <h1 className="font-semibold pl-5 text-[0.9rem]">  </h1> */}
           <div className="flex mt-1 items-start">
             <span className="pl-3 mr-1  text-gray-700 text-[1.4rem] ">

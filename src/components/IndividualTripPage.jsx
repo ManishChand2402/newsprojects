@@ -23,9 +23,10 @@ import {
   FaStar,
   FaWifi,
 } from "react-icons/fa";
-import { CiBookmark } from "react-icons/ci";
+import { GoChevronDown } from "react-icons/go";
+import { CiBookmark, CiCalendar } from "react-icons/ci";
 import { IoMdBed } from "react-icons/io";
-import { IoFastFoodOutline } from "react-icons/io5";
+import { IoFastFoodOutline, IoPeopleOutline } from "react-icons/io5";
 import { FiShare2 } from "react-icons/fi";
 import {
   MdOutlineCleaningServices,
@@ -129,7 +130,6 @@ function IndividualTripPage() {
             </div>
           </div>
         {/*----------------------Main Heading section End-----------------------------*/}
-
         </div>
 
         <div className="lg:flex max-w-[93%] mx-auto mt-3">
@@ -241,7 +241,28 @@ function IndividualTripPage() {
             <div className="my-3 pb-2">
           {/* Heading Component import */}
               <Heading titel={"Activities to-do"} />
-              <div className="flex gap-x-2 overflow-auto mt-2 pb-2">
+              <div className="flex gap-x-2 overflow-auto  mt-2 pb-2 ">
+                <ActivitiesToDo
+                  titel="Half day sunrise tour on top station"
+                  img={"ActivitiesToDoimg.svg"}
+                  price={"1,388.65"}
+                  oldPrice={"1,600.65"}
+                  name="Wildlife Watching"
+                />
+                <ActivitiesToDo
+                  titel="Half day sunrise tour on top station"
+                  img={"ActivitiesToDoimg.svg"}
+                  price={"1,388.65"}
+                  oldPrice={"1,600.65"}
+                  name="Wildlife Watching"
+                />
+                <ActivitiesToDo
+                  titel="Half day sunrise tour on top station"
+                  img={"ActivitiesToDoimg.svg"}
+                  price={"1,388.65"}
+                  oldPrice={"1,600.65"}
+                  name="Wildlife Watching"
+                />
                 <ActivitiesToDo
                   titel="Half day sunrise tour on top station"
                   img={"ActivitiesToDoimg.svg"}
@@ -339,7 +360,7 @@ function IndividualTripPage() {
           </div>
           {/*--------------------------Travelers reviews Bar End-----------------------*/}
 
-          {/*---------------------------------------------price box only for laptop size--------------------------------------  */}
+          {/*----------------------------------price box only for laptop size--------------------------------------  */}
           <div className="hidden lg:block lg:w-[55%] lg:ml-2">
             <div className="border-2 rounded-xl px-4 ">
               <p className="my-2 text-[0.7rem] text-gray-500">
@@ -372,15 +393,20 @@ function IndividualTripPage() {
                     Book your spot
                   </h1>
                 </div>
-                <div className="flex items-center">
-                  <p>Start date</p>
+                <div className="flex items-center ] border-b-[0.1px] gap-x-3 py-5 mb-[1rem]">
+                  <div className="border-[1.3px] border-gray-300 rounded-lg py-[0.2rem] px-[1rem] flex items-center "><p className="text-sm">Start date</p> <span className="pl-2 text-[1.2rem]"><CiCalendar /></span>
+                  </div>
+                  <div className="border-[1.3px] border-gray-300 text-gray-500 rounded-lg py-[0.2rem] px-[1rem] flex items-center bg-gray-100"><p className="text-sm">End date</p> <span className="pl-2 text-[1.2rem]"><CiCalendar /></span>
+                  </div>
+                  <div className="border-[1.3px] border-gray-300 rounded-lg py-[0.2rem] px-[0.5rem] flex items-center "><span className="pr-1 text-gray-600 "><IoPeopleOutline /></span><p className="text-sm">2</p> <span className="pl-1 text-[1.3rem] text-gray-400"><GoChevronDown /></span>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
           {/*----------------------price box only for laptop size end----------------*/}
         </div>
-        {/* -------------------------------------------similar packages section ----------------------------*/}
+        {/*------------------------similar packages section ----------------------------*/}
         <div className="max-w-[93%] mx-auto mt-3">
           {/* similar packages */}
           <div className="my-3 pb-2">
