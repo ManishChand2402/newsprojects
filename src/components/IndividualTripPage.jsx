@@ -12,7 +12,7 @@ import {
   SimilarPackages,
 } from "./Button/ButtonC";
 import { RatingBar } from "./RatingC/RatingBar";
-import {ImgGridTemplate} from "./ImgGrid/ImgGridTemplate";
+import { ImgGridTemplate } from "./ImgGrid/ImgGridTemplate";
 //-----------------------Components import end----------------
 //-----------------------icons import starting----------------
 import {
@@ -43,7 +43,6 @@ import { PiTicketThin, PiVanLight } from "react-icons/pi";
 import { FaqCp } from "./FAQC/FaqCp";
 //-----------------------icons import End----------------
 
-
 function IndividualTripPage() {
   return (
     <>
@@ -73,7 +72,7 @@ function IndividualTripPage() {
           </div>
         </div>
         <div className="border-b-2 pb-[2rem] mt-4 md:pb-1">
-        {/*----------------------Main Heading section staring-----------------------------*/}
+          {/*----------------------Main Heading section staring-----------------------------*/}
           <div className="max-w-[93%] mx-auto">
             <div>
               {/*------------------Main heading----------------------*/}
@@ -83,7 +82,7 @@ function IndividualTripPage() {
                     6 Night 5 Days Honeymoon Package From Munnar
                   </h1>
                   <div>
-                 {/*----------------------------Rating section end----------------------------*/}
+                    {/*----------------------------Rating section end----------------------------*/}
                     <div className="flex items-center my-2">
                       <FaStar className="w-[2rem] mb-1 ml-[-0.4rem]" />
                       <div className="mr-2">
@@ -102,7 +101,7 @@ function IndividualTripPage() {
                 </div>
                 {/*----------------------------Rating section end----------------------------*/}
                 <div className="flex flex-wrap gap-1">
-                {/* Button import */}
+                  {/* Button import */}
                   <ButtonC
                     bgColor={"bg-[#53e80d8f]"}
                     icon={<MdOutlineWorkspacePremium />}
@@ -129,25 +128,25 @@ function IndividualTripPage() {
               <ImgGridTemplate />
             </div>
           </div>
-        {/*----------------------Main Heading section End-----------------------------*/}
+          {/*----------------------Main Heading section End-----------------------------*/}
         </div>
 
         <div className="lg:flex max-w-[93%] mx-auto mt-3">
           <div className="lg:w-[55%]">
-    {/*---------------------- Get there [Buttons] section Staring----------------------- */}
-          {/* Heading Component import */}
+            {/*---------------------- Get there [Buttons] section Staring----------------------- */}
+            {/* Heading Component import */}
             <Heading titel={"Get there"} />
             <div className="flex flex-wrap gap-2 my-[0.5rem]">
-                {/* Button import */}
+              {/* Button import */}
               <ButtonD
                 icon={<GiCommercialAirplane />}
                 titel={"Cochin International Airport"}
               />
               <ButtonD icon={<LuTrain />} titel={"Ernakulam Junction"} />
             </div>
-    {/*---------------------- What's Included section Staring----------------------- */}
+            {/*---------------------- What's Included section Staring----------------------- */}
             <div className="my-[1rem]">
-          {/* Heading Component import */}
+              {/* Heading Component import */}
               <Heading titel={"What's included"} />
               <div className="flex flex-wrap gap-x-1 ">
                 <Para icon={<GiSandsOfTime />} titel={"5 days of 6 nights"} />
@@ -156,11 +155,11 @@ function IndividualTripPage() {
                 <Para icon={<PiTicketThin />} titel={"All Tickets"} />
               </div>
             </div>
-    {/*---------------------- What's Included section End----------------------- */}
+            {/*---------------------- What's Included section End----------------------- */}
 
-    {/*---------------------- What you'll see section Staring----------------------- */}
+            {/*---------------------- What you'll see section Staring----------------------- */}
             <div className="">
-          {/* Heading Component import */}
+              {/* Heading Component import */}
               <Heading titel={"What you'll see"} />
               <div className="flex  gap-x-2 overflow-x-auto mt-1">
                 <ImageS
@@ -185,12 +184,11 @@ function IndividualTripPage() {
                 />
               </div>
             </div>
-    {/*---------------------- What you'll see section End----------------------- */}
+            {/*---------------------- What you'll see section End----------------------- */}
 
-
-    {/*----------------------Itinerary (div) days Faqs section Staring----------------------- */}
+            {/*----------------------Itinerary (div) days Faqs section Staring----------------------- */}
             <div>
-          {/* Heading Component import */}
+              {/* Heading Component import */}
               <Heading titel={"Itinerary"} />
               <Faqs titel={"Lorem ipsum dolor sit"} Days={"Day 1"} />
               <Faqs titel={"Lorem ipsum dolor sit"} Days={"Day 2"} />
@@ -198,13 +196,26 @@ function IndividualTripPage() {
               <Faqs titel={"Lorem ipsum dolor sit"} Days={"Day 4"} />
               <Faqs titel={"Lorem ipsum dolor sit"} Days={"Day 5"} />
               <Faqs titel={"Lorem ipsum dolor sit"} Days={"Day 6"} />
+              {/* Download box (btn) */}
+              <div className="hidden lg:block py-[0.1rem]">
+              <div className="flex justify-between border-2 rounded-3xl items-center my-1 px-[1rem] py-[0.8rem]">
+      <div className="">
+        <h1 className="text-[0.8rem] font-semibold">Want to read it later?</h1>
+        <p className="text-[0.7rem] text-gray-500">Download this tour's PDF brochure and start tour planning offline</p>
+      </div>
+     
+      <button className="bg-[#1ed760] w-[16%] py-[0.3rem] rounded-lg my-2 text-[0.7rem] font-semibold text-black">
+       Download
+      </button>
+    </div>
+              </div>
             </div>
-    {/*----------------------Itinerary (div) days Faqs section End----------------------- */}
+            {/*----------------------Itinerary (div) days Faqs section End----------------------- */}
 
-    {/*----------------------Where you'll stay Boxs(Images) section Staring----------------------- */}
+            {/*----------------------Where you'll stay Boxs(Images) section Staring----------------------- */}
 
             <div className="my-3 pb-2">
-          {/* Heading Component import */}
+              {/* Heading Component import */}
               <Heading titel={"Where you'll stay"} />
               <div className="flex gap-x-2 overflow-auto mt-2 pb-2">
                 <StayPlace
@@ -235,11 +246,11 @@ function IndividualTripPage() {
               </div>
               <div></div>
             </div>
-    {/*----------------------Where you'll stay Boxs(Images) section End----------------------- */}
+            {/*----------------------Where you'll stay Boxs(Images) section End----------------------- */}
 
-    {/*----------------------Activities to-do Boxs(Images) section Staring----------------------- */}
+            {/*----------------------Activities to-do Boxs(Images) section Staring----------------------- */}
             <div className="my-3 pb-2">
-          {/* Heading Component import */}
+              {/* Heading Component import */}
               <Heading titel={"Activities to-do"} />
               <div className="flex gap-x-2 overflow-auto  mt-2 pb-2 ">
                 <ActivitiesToDo
@@ -302,13 +313,13 @@ function IndividualTripPage() {
             </div>
             {/*----------------------Activities to-do section End----------------------- */}
 
-          {/*----------------(Inclusions) and (FAQ) (cancellation policy) (help) section staring*/}
+            {/*----------------(Inclusions) and (FAQ) (cancellation policy) (help) section staring*/}
             <div>
               <FaqCp />
             </div>
             {/*----------------(Inclusions) and (FAQ) (cancellation policy) (help) section end*/}
             <div>
-          {/* Heading Component import */}
+              {/* Heading Component import */}
               <Heading titel="Travelers reviews" />
               <div className="flex mt-3 items-center flex-wrap">
                 <div className="flex  items-center rounded-full bg-[#53e80d33] py-[0.5rem] px-[0.5rem]">
@@ -393,13 +404,57 @@ function IndividualTripPage() {
                     Book your spot
                   </h1>
                 </div>
-                <div className="flex items-center ] border-b-[0.1px] gap-x-3 py-5 mb-[1rem]">
-                  <div className="border-[1.3px] border-gray-300 rounded-lg py-[0.2rem] px-[1rem] flex items-center "><p className="text-sm">Start date</p> <span className="pl-2 text-[1.2rem]"><CiCalendar /></span>
+                <div className="flex items-center ] border-b-[0.1px] gap-x-3 py-5 mb-[0.8rem]">
+                  <div className="border-[1.3px] border-gray-300 rounded-lg py-[0.2rem] px-[1rem] flex items-center ">
+                    <p className="text-sm">Start date</p>{" "}
+                    <span className="pl-2 text-[1.2rem]">
+                      <CiCalendar />
+                    </span>
                   </div>
-                  <div className="border-[1.3px] border-gray-300 text-gray-500 rounded-lg py-[0.2rem] px-[1rem] flex items-center bg-gray-100"><p className="text-sm">End date</p> <span className="pl-2 text-[1.2rem]"><CiCalendar /></span>
+                  <div className="border-[1.3px] border-gray-300 text-gray-500 rounded-lg py-[0.2rem] px-[1rem] flex items-center bg-gray-100">
+                    <p className="text-sm">End date</p>{" "}
+                    <span className="pl-2 text-[1.2rem]">
+                      <CiCalendar />
+                    </span>
                   </div>
-                  <div className="border-[1.3px] border-gray-300 rounded-lg py-[0.2rem] px-[0.5rem] flex items-center "><span className="pr-1 text-gray-600 "><IoPeopleOutline /></span><p className="text-sm">2</p> <span className="pl-1 text-[1.3rem] text-gray-400"><GoChevronDown /></span>
+                  <div className="border-[1.3px] border-gray-300 rounded-lg py-[0.2rem] px-[0.5rem] flex items-center ">
+                    <span className="pr-1 text-gray-600 ">
+                      <IoPeopleOutline />
+                    </span>
+                    <p className="text-sm">2</p>{" "}
+                    <span className="pl-1 text-[1.3rem] text-gray-400">
+                      <GoChevronDown />
+                    </span>
                   </div>
+                </div>
+                <div className="border-b-[0.1px]">
+                  <h1 className="text-sm font-semibold">
+                    Munnar: Honey moon Premium package
+                  </h1>
+                  <p className="text-[0.9rem] mt-[0.5rem] ">
+                    {" "}
+                    <span className="text-red-500">-25% </span>{" "}
+                    <span className="text-gray-400 text-[0.8rem] pl-1">₹</span>
+                    <span className=" text-[0.8rem] line-through pr-1 text-gray-400">
+                      {" "}
+                      15000{" "}
+                    </span>{" "}
+                    ₹11250 x 2 Adults{" "}
+                  </p>
+                  <h1 className="text-[1.5rem] font-semibold">Total ₹ 22500</h1>
+                  <p className="text-[0.8rem] mt-1.4 mb-0">
+                    (No additional taxes or booking fees)
+                  </p>
+                  <p className="text-[0.7rem] text-red-400 mt-[0.1rem] mb-3">
+                    offers applied: 1 offer available
+                  </p>
+                </div>
+                <div className="my-2 text-center">
+                  <p className="text-[0.7rem] text-center text-gray-600">
+                    Members can save uo to 25%. <span className="text-blue-600"> Sign up </span>  to get it.
+                  </p>
+                  <button className="bg-[#1ed760] w-[80%] py-2 rounded-lg my-3 font-semibold" >Book Now</button>
+                  <p className="text-[0.7rem] text-gray-600">if you are unhappy with the package costs or require any modifications, please contact a trip expert our <span className="text-blue-600">customer service </span>team.</p>
                 </div>
               </div>
             </div>
@@ -410,7 +465,7 @@ function IndividualTripPage() {
         <div className="max-w-[93%] mx-auto mt-3">
           {/* similar packages */}
           <div className="my-3 pb-2">
-          {/* Heading Component import */}
+            {/* Heading Component import */}
             <Heading titel={"Similar Packages"} />
             <div className="flex gap-x-2 overflow-auto mt-2 pb-2">
               <SimilarPackages

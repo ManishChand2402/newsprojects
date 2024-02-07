@@ -2,16 +2,9 @@ import React from "react";
 import { FaInfoCircle, FaPlus } from "react-icons/fa";
 import { MdOutlineStar } from "react-icons/md";
 
-export const ButtonC = ({ icon, bgColor, titel }) => {
-  return (
-    <div
-      className={`flex items-center gap-x-[0.1rem] ${bgColor} rounded-xl px-2 py-1 xl:px-4`}
-    >
-      <span className="xl:text-[1.4rem]">{icon}</span>
-      <h1 className="font-semibold text-[0.8rem] xl:text-[1rem]">{titel}</h1>
-    </div>
-  );
-};
+
+
+
 // Get there btns
 export const ButtonD = ({ icon, titel }) => {
   return (
@@ -23,6 +16,7 @@ export const ButtonD = ({ icon, titel }) => {
     </div>
   );
 };
+
 
 // What's inCluded btns
 export const Para = ({ icon, titel }) => {
@@ -80,7 +74,7 @@ export const StayPlace = ({ titel, img, icon }) => {
     </div>
   );
 };
-// Activities To-Do componets
+// Activities To-Do components
 export const ActivitiesToDo = ({ titel, img, price, oldPrice, name }) => {
   return (
     <div className="shadow-lg px-[0.4rem] rounded-xl">
