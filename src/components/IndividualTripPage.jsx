@@ -10,6 +10,7 @@ import {
   StayPlace,
   ActivitiesToDo,
   SimilarPackages,
+
 } from "./Button/ButtonC";
 import { RatingBar } from "./RatingC/RatingBar";
 import { ImgGridTemplate } from "./ImgGrid/ImgGridTemplate";
@@ -105,17 +106,17 @@ function IndividualTripPage() {
                   <ButtonC
                     bgColor={"bg-[#53e80d8f]"}
                     icon={<MdOutlineWorkspacePremium />}
-                    titel={"Premium"}
+                    title={"Premium"}
                   />
                   <ButtonC
                     bgColor={"bg-[#ddfacf] "}
                     icon={<TbHeartCheck />}
-                    titel={"Honeymoon"}
+                    title={"Honeymoon"}
                   />
                   <ButtonC
                     bgColor={"bg-[#161edd26] "}
                     icon={<BsPeople />}
-                    titel={"Member price available"}
+                    title={"Member price available"}
                   />
                   <div className="hidden lg:visible lg:flex items-center text-[1.3rem]">
                     <CiBookmark />
@@ -135,24 +136,24 @@ function IndividualTripPage() {
           <div className="lg:w-[55%]">
             {/*---------------------- Get there [Buttons] section Staring----------------------- */}
             {/* Heading Component import */}
-            <Heading titel={"Get there"} />
+            <Heading title={"Get there"} />
             <div className="flex flex-wrap gap-2 my-[0.5rem]">
               {/* Button import */}
               <ButtonD
                 icon={<GiCommercialAirplane />}
-                titel={"Cochin International Airport"}
+                title={"Cochin International Airport"}
               />
-              <ButtonD icon={<LuTrain />} titel={"Ernakulam Junction"} />
+              <ButtonD icon={<LuTrain />} title={"Ernakulam Junction"} />
             </div>
             {/*---------------------- What's Included section Staring----------------------- */}
             <div className="my-[1rem]">
               {/* Heading Component import */}
-              <Heading titel={"What's included"} />
+              <Heading title={"What's included"} />
               <div className="flex flex-wrap gap-x-1 ">
-                <Para icon={<GiSandsOfTime />} titel={"5 days of 6 nights"} />
-                <Para icon={<MdOutlineFoodBank />} titel={"Food included"} />
-                <Para icon={<PiVanLight />} titel={"Transportaion"} />
-                <Para icon={<PiTicketThin />} titel={"All Tickets"} />
+                <Para icon={<GiSandsOfTime />} title={"5 days of 6 nights"} />
+                <Para icon={<MdOutlineFoodBank />} title={"Food included"} />
+                <Para icon={<PiVanLight />} title={"Transportaion"} />
+                <Para icon={<PiTicketThin />} title={"All Tickets"} />
               </div>
             </div>
             {/*---------------------- What's Included section End----------------------- */}
@@ -160,27 +161,27 @@ function IndividualTripPage() {
             {/*---------------------- What you'll see section Staring----------------------- */}
             <div className="">
               {/* Heading Component import */}
-              <Heading titel={"What you'll see"} />
+              <Heading title={"What you'll see"} />
               <div className="flex  gap-x-2 overflow-x-auto mt-1">
                 <ImageS
                   img={"./pexels-oliver3.svg"}
-                  titel={"Lorem ipsum dolor sit amet consectetur."}
+                  title={"Lorem ipsum dolor sit amet consectetur."}
                 />
                 <ImageS
                   img={"./pexels-oliver3.svg"}
-                  titel={"Lorem ipsum dolor sit amet consectetur."}
+                  title={"Lorem ipsum dolor sit amet consectetur."}
                 />
                 <ImageS
                   img={"./pexels-oliver3.svg"}
-                  titel={"Lorem ipsum dolor sit amet consectetur."}
+                  title={"Lorem ipsum dolor sit amet consectetur."}
                 />
                 <ImageS
                   img={"./pexels-oliver3.svg"}
-                  titel={"Lorem ipsum dolor sit amet consectetur."}
+                  title={"Lorem ipsum dolor sit amet consectetur."}
                 />
                 <ImageS
                   img={"./pexels-oliver3.svg"}
-                  titel={"Lorem ipsum dolor sit amet consectetur."}
+                  title={"Lorem ipsum dolor sit amet consectetur."}
                 />
               </div>
             </div>
@@ -189,13 +190,13 @@ function IndividualTripPage() {
             {/*----------------------Itinerary (div) days Faqs section Staring----------------------- */}
             <div>
               {/* Heading Component import */}
-              <Heading titel={"Itinerary"} />
-              <Faqs titel={"Lorem ipsum dolor sit"} Days={"Day 1"} />
-              <Faqs titel={"Lorem ipsum dolor sit"} Days={"Day 2"} />
-              <Faqs titel={"Lorem ipsum dolor sit"} Days={"Day 3"} />
-              <Faqs titel={"Lorem ipsum dolor sit"} Days={"Day 4"} />
-              <Faqs titel={"Lorem ipsum dolor sit"} Days={"Day 5"} />
-              <Faqs titel={"Lorem ipsum dolor sit"} Days={"Day 6"} />
+              <Heading title={"Itinerary"} />
+              <Faqs title={"Lorem ipsum dolor sit"} Days={"Day 1"} />
+              <Faqs title={"Lorem ipsum dolor sit"} Days={"Day 2"} />
+              <Faqs title={"Lorem ipsum dolor sit"} Days={"Day 3"} />
+              <Faqs title={"Lorem ipsum dolor sit"} Days={"Day 4"} />
+              <Faqs title={"Lorem ipsum dolor sit"} Days={"Day 5"} />
+              <Faqs title={"Lorem ipsum dolor sit"} Days={"Day 6"} />
               {/* Download box (btn) */}
               <div className="hidden lg:block py-[0.1rem]">
               <div className="flex justify-between border-2 rounded-3xl items-center my-1 px-[1rem] py-[0.8rem]">
@@ -216,30 +217,30 @@ function IndividualTripPage() {
 
             <div className="my-3 pb-2">
               {/* Heading Component import */}
-              <Heading titel={"Where you'll stay"} />
+              <Heading title={"Where you'll stay"} />
               <div className="flex gap-x-2 overflow-auto mt-2 pb-2">
                 <StayPlace
-                  titel="Lorem ipsum dolor sit amet consectetur."
+                  title="Lorem ipsum dolor sit amet consectetur."
                   img={"./whereYouStayimg.svg"}
                   icon={<MdOutlineStar />}
                 />
                 <StayPlace
-                  titel="Lorem ipsum dolor sit amet consectetur."
+                  title="Lorem ipsum dolor sit amet consectetur."
                   img={"./whereYouStayimg.svg"}
                   icon={<MdOutlineStar />}
                 />
                 <StayPlace
-                  titel="Lorem ipsum dolor sit amet consectetur."
+                  title="Lorem ipsum dolor sit amet consectetur."
                   img={"./whereYouStayimg.svg"}
                   icon={<MdOutlineStar />}
                 />
                 <StayPlace
-                  titel="Lorem ipsum dolor sit amet consectetur."
+                  title="Lorem ipsum dolor sit amet consectetur."
                   img={"./whereYouStayimg.svg"}
                   icon={<MdOutlineStar />}
                 />
                 <StayPlace
-                  titel="Lorem ipsum dolor sit amet consectetur."
+                  title="Lorem ipsum dolor sit amet consectetur."
                   img={"./whereYouStayimg.svg"}
                   icon={<MdOutlineStar />}
                 />
@@ -251,59 +252,59 @@ function IndividualTripPage() {
             {/*----------------------Activities to-do Boxs(Images) section Staring----------------------- */}
             <div className="my-3 pb-2">
               {/* Heading Component import */}
-              <Heading titel={"Activities to-do"} />
+              <Heading title={"Activities to-do"} />
               <div className="flex gap-x-2 overflow-auto  mt-2 pb-2 ">
                 <ActivitiesToDo
-                  titel="Half day sunrise tour on top station"
+                  title="Half day sunrise tour on top station"
                   img={"ActivitiesToDoimg.svg"}
                   price={"1,388.65"}
                   oldPrice={"1,600.65"}
                   name="Wildlife Watching"
                 />
                 <ActivitiesToDo
-                  titel="Half day sunrise tour on top station"
+                  title="Half day sunrise tour on top station"
                   img={"ActivitiesToDoimg.svg"}
                   price={"1,388.65"}
                   oldPrice={"1,600.65"}
                   name="Wildlife Watching"
                 />
                 <ActivitiesToDo
-                  titel="Half day sunrise tour on top station"
+                  title="Half day sunrise tour on top station"
                   img={"ActivitiesToDoimg.svg"}
                   price={"1,388.65"}
                   oldPrice={"1,600.65"}
                   name="Wildlife Watching"
                 />
                 <ActivitiesToDo
-                  titel="Half day sunrise tour on top station"
+                  title="Half day sunrise tour on top station"
                   img={"ActivitiesToDoimg.svg"}
                   price={"1,388.65"}
                   oldPrice={"1,600.65"}
                   name="Wildlife Watching"
                 />
                 <ActivitiesToDo
-                  titel="Half day sunrise tour on top station"
+                  title="Half day sunrise tour on top station"
                   img={"ActivitiesToDoimg.svg"}
                   price={"1,388.65"}
                   oldPrice={"1,600.65"}
                   name="Wildlife Watching"
                 />
                 <ActivitiesToDo
-                  titel="Half day sunrise tour on top station"
+                  title="Half day sunrise tour on top station"
                   img={"ActivitiesToDoimg.svg"}
                   price={"1,388.65"}
                   oldPrice={"1,600.65"}
                   name="Wildlife Watching"
                 />
                 <ActivitiesToDo
-                  titel="Half day sunrise tour on top station"
+                  title="Half day sunrise tour on top station"
                   img={"ActivitiesToDoimg.svg"}
                   price={"1,388.65"}
                   oldPrice={"1,600.65"}
                   name="Wildlife Watching"
                 />
                 <ActivitiesToDo
-                  titel="Half day sunrise tour on top station"
+                  title="Half day sunrise tour on top station"
                   img={"ActivitiesToDoimg.svg"}
                   price={"1,388.65"}
                   oldPrice={"1,600.65"}
@@ -320,7 +321,7 @@ function IndividualTripPage() {
             {/*----------------(Inclusions) and (FAQ) (cancellation policy) (help) section end*/}
             <div>
               {/* Heading Component import */}
-              <Heading titel="Travelers reviews" />
+              <Heading title="Travelers reviews" />
               <div className="flex mt-3 items-center flex-wrap">
                 <div className="flex  items-center rounded-full bg-[#53e80d33] py-[0.5rem] px-[0.5rem]">
                   <MdOutlineStar className=" text-[1rem]" />
@@ -466,34 +467,34 @@ function IndividualTripPage() {
           {/* similar packages */}
           <div className="my-3 pb-2">
             {/* Heading Component import */}
-            <Heading titel={"Similar Packages"} />
+            <Heading title={"Similar Packages"} />
             <div className="flex gap-x-2 overflow-auto mt-2 pb-2">
               <SimilarPackages
-                titel="6 Night 5 Days Honeymoon Package From Munnar"
+                title="6 Night 5 Days Honeymoon Package From Munnar"
                 img={"Similarpackagesimg.svg"}
                 price={"1,388.65"}
                 oldPrice={"1,600.65"}
               />
               <SimilarPackages
-                titel="6 Night 5 Days Honeymoon Package From Munnar"
+                title="6 Night 5 Days Honeymoon Package From Munnar"
                 img={"Similarpackagesimg.svg"}
                 price={"1,388.65"}
                 oldPrice={"1,600.65"}
               />
               <SimilarPackages
-                titel="6 Night 5 Days Honeymoon Package From Munnar"
+                title="6 Night 5 Days Honeymoon Package From Munnar"
                 img={"Similarpackagesimg.svg"}
                 price={"1,388.65"}
                 oldPrice={"1,600.65"}
               />
               <SimilarPackages
-                titel="6 Night 5 Days Honeymoon Package From Munnar"
+                title="6 Night 5 Days Honeymoon Package From Munnar"
                 img={"Similarpackagesimg.svg"}
                 price={"1,388.65"}
                 oldPrice={"1,600.65"}
               />
               <SimilarPackages
-                titel="6 Night 5 Days Honeymoon Package From Munnar"
+                title="6 Night 5 Days Honeymoon Package From Munnar"
                 img={"Similarpackagesimg.svg"}
                 price={"1,388.65"}
                 oldPrice={"1,600.65"}
