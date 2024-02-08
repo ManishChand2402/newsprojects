@@ -10,7 +10,6 @@ import {
   StayPlace,
   ActivitiesToDo,
   SimilarPackages,
-
 } from "./Button/ButtonC";
 import { RatingBar } from "./RatingC/RatingBar";
 import { ImgGridTemplate } from "./ImgGrid/ImgGridTemplate";
@@ -373,7 +372,8 @@ function IndividualTripPage() {
           {/*--------------------------Travelers reviews Bar End-----------------------*/}
 
           {/*----------------------------------price box only for laptop size--------------------------------------  */}
-          <div className="hidden lg:block lg:w-[55%] lg:ml-2">
+          <div className="hidden lg:block  lg:w-[55%] lg:ml-2 relative">
+          <div className="sticky top-0">
             <div className="border-2 rounded-xl px-4 ">
               <p className="my-2 text-[0.7rem] text-gray-500">
                 Starting form <span>₹1500</span>
@@ -458,6 +458,7 @@ function IndividualTripPage() {
                   <p className="text-[0.7rem] text-gray-600">if you are unhappy with the package costs or require any modifications, please contact a trip expert our <span className="text-blue-600">customer service </span>team.</p>
                 </div>
               </div>
+            </div>
             </div>
           </div>
           {/*----------------------price box only for laptop size end----------------*/}
